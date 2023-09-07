@@ -1,0 +1,61 @@
+.nav {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 0;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    .wrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+       .left {
+            justify-content: center;
+             .hamburger {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                
+                span {
+                    width: 100%;
+                    height: 5.5px;
+                    background-color: #ffc10c;
+                    color: inherit;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }   
+    }
+}
+}
+&.active {
+  background: linear-gradient(to right 50% #FFC10C, 50%, 100% transparent);
+    
+    
+            .hamburger {
+            span {
+                &:first-child {
+                    background-color: #FFC10C;
+                    color: #000;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                  opacity: 0;
+                }
+
+                &:last-child {
+                    background-color: #FFC10C;
+                    color: #000;
+                    transform: rotate(-45deg);
+
+                }
+            }
+        }
+        
+    }
+}
