@@ -28,7 +28,9 @@
                 width: 60%;
                 height: 60%;
                 object-fit:cover;
+                position: relative;
             }
+           
         }
       }
     .right-section {
@@ -41,27 +43,21 @@
        .pic-section {
           width: 100%;
           height: 100%;
+          border-radius: 50%;
+          background-color: #ffc10c;
+          filter:grayscale(50%);
           position: relative;   
        img {
           position: absolute;
-          top: -25%;
+          top: -15%;
           left: -40px;
           width: 100%;
           height: 100%;
+          background-color: transparent;
           object-fit: cover;
           align-self: center;
-          &:after {
-            content: '';
-            width: 100%;
-            position: absolute;
-            bottom: -20px;
-            left: 0;
-            background-color: #ffc10c;
-            height: 20%;
-            z-index: 9;
-          }
-       }
-      
+          z-index: 4;
+       }     
     }
     }
     .left-section {
@@ -128,15 +124,15 @@
     @keyframes moveArrow {
         0% {
           transform: translate(0, 0);
-          opacity: 1;
+          opacity: 0.2;
         }
         50% {
-          transform: translate(0, 10px);
+          transform: translate(0, 2px);
           opacity: 0.5;
         }
         100% {
           transform: translate(0, 100%);
-          opacity: 0.8;
+          opacity: 1;
 
         }
       }

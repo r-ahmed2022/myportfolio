@@ -37,7 +37,7 @@ export const Intro = ({ setMenuState }) => {
       </div>
       <div  className="right-section">
         <div className="pic-section">
-          <img src="images/mypic3.jpeg" className="mypic" alt="mypicture"/>
+          <img src="images/mypic3.png" className="mypic" alt="mypicture"/>
         </div>
 
       </div>

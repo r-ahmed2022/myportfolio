@@ -7,7 +7,7 @@ const HamburgerMenu = ({menuState, setMenuState}) => {
         "Intro",
         "Portfolio",
         "Testimonials",
-        "Works",
+        "Aboutme",
     ]
   return (
     <ul className={"menu " + (menuState && 'active')} >

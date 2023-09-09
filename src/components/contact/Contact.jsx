@@ -2,7 +2,9 @@ import React from 'react'
 import './Contact.scss'
 const Contact = () => {
   return (
-    <div className='contact'>Contact</div>
+    <div className='contact'>
+     <h1>Contact</h1>
+    </div>
   )
 }
 

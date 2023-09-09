@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Intro } from './components/intro/Intro'; 
-import { Work } from './components/works/Work';
+import { Aboutme } from './components/aboutme/Aboutme';
 import { Portfolio } from './components/portfolio/Portfolio';
 import { Testimonials } from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
@@ -16,7 +16,7 @@ const  App = () => {
       <div className="main-content">
         <Intro menuState={menuState} setMenuState={setMenuState} />
         <Portfolio />
-        <Work />
+        <Aboutme />
         <Testimonials />
         <Contact />
       </div>

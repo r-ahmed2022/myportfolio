@@ -12,6 +12,7 @@ const Navbar = ({menuState, setMenuState}) => {
                </div>
         </div>
         <div className="right">
+          <span><i className="fa-solid fa-envelope mail-icon"></i>meesamriyaz@gmail.com</span>
         </div>
        
       </div>
