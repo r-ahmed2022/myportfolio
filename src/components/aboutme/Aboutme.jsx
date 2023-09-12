@@ -1,18 +1,21 @@
 import './aboutme.scss'
+import Skill from './Skill'
 export const Aboutme = () => {
+
   return (
     <div  className='aboutme' id="aboutme">
     <div className="left">
-        <h1>Love being a developer !</h1>
-        <span>Business focus, believe in minimalistic design</span>
+        <h1>Developer based in Kashmir, India!</h1>
+        <span>Minimalistic design caters well to business</span>
 
     </div>
     <div className="right">
-      <p>Front-end developer based in Kashmir, India.
-       Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
+      <h1>Skills</h1>
+              <Skill /> 
+              
+      </div>
+     
     </div>
 
-    </div>
   )
 }

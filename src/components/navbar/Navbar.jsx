@@ -12,7 +12,8 @@ const Navbar = ({menuState, setMenuState}) => {
                </div>
         </div>
         <div className="right">
-          <span><i className="fa-solid fa-envelope mail-icon"></i>meesamriyaz@gmail.com</span>
+        <span style={{"font-family": "Roboto"}}><i className="fa-solid fa-mobile-retro mail-icon"></i>+91-9796171751</span>
+        <span style={{"font-family": "Roboto"}}><i className="fa-solid fa-envelope mail-icon"></i>meesamriyaz@gmail.com</span>
         </div>
        
       </div>

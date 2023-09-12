@@ -50,25 +50,27 @@ export const Portfolio = () => {
   }, [selected])
   return (
     <div className='portfolio' id='portfolio'>
-            <h1>Portfolio</h1>
     <div className="wrapper">
-      <ul className="portfolio-tabs">
-         {
-            portFolioItems.map((item) => (
-              <PortfolioList active={selected === item.id} 
-              setSelected={setSelected} name={item.name}
-                id={item.id}
-              />
-            ))
-         }
-      </ul>
+     <div className="portfolio-tabs-section">
+          <h1>Portfolio</h1>
+          <ul className="portfolio-tabs">
+            {
+                portFolioItems.map((item) => (
+                  <PortfolioList active={selected === item.id} 
+                  setSelected={setSelected} name={item.name}
+                    id={item.id}
+                  />
+                ))
+            }
+          </ul>
+    </div>
       <div className="projects">
           {
             project.map((item) => (
               <div className="card">
                  <img src={item.img} alt="pic" className="demoimg" />
                   <span><a href={item.url}>Live link</a></span>
-                 <h1>{item.title}</h1>
+                 <h6>{item.title}</h6>
               </div>
             ))
           }
