@@ -74,9 +74,12 @@ export const Portfolio = () => {
               </div>
             ))
           }
+          <footer><a href="#aboutme"><i class="fa-solid fa-angle-down downarrow"></i></a></footer>
 
       </div>
+
       </div>
+
     </div>
   )
 }

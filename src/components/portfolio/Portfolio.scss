@@ -84,7 +84,7 @@
         align-items: start;
         @media(max-width: 768px) {
             width: 100%;
-            height: auto;
+            height: 100%;
             order: 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -135,6 +135,29 @@
                 height: auto;
             }
         }
+        footer {
+            width: 100%;
+            height: auto;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            transform-origin: top;
+            transition: all 2s ease;
+            margin-bottom: 1rem;
+            a {
+                text-decoration: none;
+                color: #000;
+             .downarrow {
+               font-size: 4rem;
+               align-self: center;
+               animation: moveArrow 4s ease infinite;
+               &:hover {
+                animation: none;
+               }
+            }
+        }
+         }
     } 
 }
 

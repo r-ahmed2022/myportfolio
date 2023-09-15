@@ -1,10 +1,11 @@
+import { useSelector, useDispatch } from 'react-redux';
 import './aboutme.scss'
 import Skill from './Skill'
+
 export const Aboutme = () => {
-  const openResumePDF = () => {
-    const pdfURL = 'Riyaz-CV-developer.pdf';
-    window.open(pdfURL, '_blank');
-  };
+  const dispatch = useDispatch();
+  const {email} = useSelector((state) => state?.githubInfo.info)
+
   return (
     <div  className='aboutme' id="aboutme">
     <div className="left">
@@ -13,15 +14,15 @@ export const Aboutme = () => {
             <li><small>48</small><small>projects</small></li>
             <li><small>48</small><small>projects</small></li>
         </ul>
-        <button type="button" className="resume"
-         onClick={openResumePDF}>My Resume</button>
+       
     </div>
     <div className="right">
       <h1>Skills</h1>
               <Skill /> 
-              
+              <footer><a href="#recommendation"><i class="fa-solid fa-angle-down downarrow"></i></a></footer>
+  
       </div>
-     
+
     </div>
 
   )

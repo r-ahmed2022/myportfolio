@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Intro } from './components/intro/Intro'; 
 import { Aboutme } from './components/aboutme/Aboutme';
 import { Portfolio } from './components/portfolio/Portfolio';
-import { Testimonials } from './components/testimonials/Testimonials';
+import { Recommendation } from './components/recommendations/Recommendation';
 import Contact from './components/contact/Contact';
 import Navbar from './components/navbar/Navbar';
 import HamburgerMenu from './components/hamburgermenu/HamburgerMenu';
@@ -17,7 +17,7 @@ const  App = () => {
         <Intro menuState={menuState} setMenuState={setMenuState} />
         <Portfolio />
         <Aboutme />
-        <Testimonials />
+        <Recommendation />
         <Contact />
       </div>
     </div>

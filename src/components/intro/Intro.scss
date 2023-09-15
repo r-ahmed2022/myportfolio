@@ -4,7 +4,6 @@
     display: flex;
     background: transparent;
         @media(max-width: 768px) {
-        background: #FFF7DF;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -30,7 +29,7 @@
             height: 10%;
             border-radius: 50%;
             transform: translateY(-50%);
-            content: 'Minimalistic design caters well to business';
+            content: 'Minimalistic design, less distraction, more business';
             font-size: 1.5rem;
             color:#ffc10c;
             font-weight: 300;
@@ -83,6 +82,7 @@
 
         
     }
+ 
     }
     .left-section {
         flex: 0.6;
@@ -91,6 +91,7 @@
          display: flex;
          padding-left: 3rem;
          margin-right: 1rem;
+         margin-top: 1rem;
          flex-direction: column;
          justify-content: center;
          align-items: end;
@@ -116,14 +117,38 @@
          ul {
             display: flex;
             list-style: none;
-            align-items: end;
+            align-items: baseline;
             padding: .5rem;
             li {
                 margin: 1.5rem 1rem;
                 .icons {
-                    color: #ffc10c;
+                    color: #1c1c1c;
                     font-size: 2rem;
+
                 }
+                a {
+                  img {
+                     width: 33px;
+                     height: auto;
+                  }
+                }
+                .resume {
+                  display: inline-block;
+                  margin: 1.5rem 1rem 1rem 0rem;
+                  padding: .7rem 2rem;
+                  border-radius: 1.5rem;
+                  font-size: 2rem;
+                  border: none;
+                  background-color: #ffc10c;
+                  align-self: start;
+                  cursor: pointer;
+                  &:hover {
+                      background-color: rgba(255, 193, 12, 0.7);
+                  }
+                  @media(max-width: 768px) {
+                      margin-left: 1.7rem;
+                  }
+              }
             }
          }
          footer {
@@ -131,9 +156,10 @@
             height: auto;
             align-self: center;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: end;
+            align-items: end;
             transform-origin: top;
+            padding-right: 6rem;
             transition: all 2s ease;
             a {
                 text-decoration: none;
@@ -142,6 +168,9 @@
                font-size: 4rem;
                align-self: center;
                animation: moveArrow 4s ease infinite;
+               &:hover {
+                  animation: none;
+               }
             }
         }
          }
@@ -153,6 +182,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-top: 2rem;
+
                 padding-left: 0;
                  h1 {
                     font-size: 500%;
@@ -165,10 +196,11 @@
 
                 }
                 footer {
-                    display: none;
+                  padding-right: 50%;
                 }
               
          }
+         
     }
     @keyframes moveArrow {
         0% {
@@ -180,7 +212,7 @@
           opacity: 0.5;
         }
         100% {
-          transform: translate(0, 100%);
+          transform: translate(0, 10px);
           opacity: 1;
 
         }

@@ -13,9 +13,9 @@
     background-size: 50% 100%, 100% 100%;
     background-position: 0% 70%, 70% 100%;
     background-repeat: no-repeat;
-     @media(max-width: 500px) {
-      background-color: #FFF7DF;
-      background: unset;
+     @media(max-width: 768px) {
+        background-size: 15% 100%, 100% 100%;
+
      }
      font-family: 'Nanum Brush Script', cursive;
      font-size: 90%;
@@ -23,7 +23,7 @@
   }
 .app {
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0; 
      h1 {
       font-size: 6rem;
@@ -48,4 +48,27 @@
             padding: 1rem 0;
         }
       }
+      footer {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        justify-self: flex-start;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        transform-origin: top;
+        transition: all 2s ease;
+        a {
+            text-decoration: none;
+            color: #000;
+         .downarrow {
+           font-size: 4rem;
+           align-self: center;
+           animation: moveArrow 4s ease infinite;
+           &:hover {
+              animation: none;
+           }
+        }
+    }
+     }
   }
