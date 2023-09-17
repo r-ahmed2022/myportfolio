@@ -36,7 +36,7 @@ export const Intro = ({ setMenuState }) => {
          <h3>Full Stack<span ref={textRef} className="animatetext"></span></h3>
          <ul>
             <li><a href="https://github.com/r-ahmed2022/"><i class="fa-brands fa-github fa-xs icons"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse"><img src="images/linkedin.png"className="icons" alt="linkedin" /></a></li>
+            <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
             <li>
             <button type="button" className="resume"
                 onClick={openResumePDF}>My Resume</button>

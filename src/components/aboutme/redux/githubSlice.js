@@ -1,29 +1,43 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
+const username = 'r-ahmed2022';
+const token = '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';
+
+export const gitHubInfo = createAsyncThunk('gitHubInfo', async () => {
+  const response = await fetch(`https://api.github.com/users/${username}`, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+
+  const data = await response.json();
+  return data;
+});
 
 const initialState = {
-  info: {
-    projectCount: 0,
-    starCount: 0
-  },
-}
+  data: null,
+  loading: 'idle', 
+  error: null
+};
 
-export const githubSlice = createSlice({
-  name: 'githubInfo',
+const githubSlice = createSlice({
+  name: 'githubData',
   initialState,
-  reducers: {
-    update:(state, action) => {
-       state.info = {
-        name: "riyaz",
-        email: "m@example.com"
-       }
-    },  
-  },
-  extraReducers: {
-
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(gitHubInfo.pending, (state) => {
+        state.loading = 'pending';
+      })
+      .addCase(gitHubInfo.fulfilled, (state, action) => {
+        state.loading = 'fulfilled';
+        state.data = action.payload;
+      })
+      .addCase(gitHubInfo.rejected, (state, action) => {
+        state.loading = 'rejected';
+        state.error = action.error.message;
+      });
   }
-})
+});
 
-export const { update } = githubSlice.actions
-
-export default githubSlice.reducer
+export default githubSlice.reducer;

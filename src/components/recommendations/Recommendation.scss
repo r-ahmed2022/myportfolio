@@ -2,7 +2,7 @@
     margin: 1rem;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -15,10 +15,12 @@
 
    .right {
       flex: 0.6;
+      height: auto;
       margin-right: 1rem;
       padding: 0;
       align-self: flex-start;
       justify-content: center;
+       
       footer {
         width: 100%;
         height: 100%;
@@ -43,6 +45,44 @@
     }
      }
    
+   }
+   @media(max-width: 768px) {
+      flex-direction: column;
+      .right {
+         height: 80%;
+         .experiences {
+           height: auto;
+           padding-left: 5rem;;
+            li {
+             margin-bottom: 0rem;
+            
+           div {
+               min-height: 100px;
+
+            }
+         }
+           
+         }
+         footer {
+            width: 100%;
+            margin: 3rem 0;
+            margin-bottom: 5rem;
+            align-self: end;
+            padding-top: 4rem;
+            margin-left: 10rem;
+         }
+      }
+      .left {
+         order: 2;
+         h1{
+            font-size: 5rem;
+            margin-top: 1rem;
+            align-self: center;
+
+         }
+       
+
+      }
    }
     
 }
