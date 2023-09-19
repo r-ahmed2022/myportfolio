@@ -26,6 +26,18 @@
         h1 {
             font-size: 3rem;
             margin-right: 4rem;
+            @media(max-width: 768px) {
+                font-size: 2rem;
+                span {
+                    transform: translateX(-10%);
+                    font-size: 150%;
+                }
+
+            }
+            span {
+                transform: translateX(-5%);
+                font-size: 150%;
+            }
         }
         span 
         {
@@ -49,14 +61,35 @@
               li {
                 display: inline-block;
                 margin: 0;
-                padding: 1rem 2rem;
-                box-shadow: 0px 1px 2px 2px #ffc10c;
+                padding: 0rem 2rem;
                 margin-right: 1rem;
                 border-radius: 1.5rem;
+                font-family: 'Roboto';
+                text-align: center;
+                position: relative;
+                animation: movedown 5s ease forwards;
+
                 small {
-                    font-size: 1.3rem;
-                   
+                    font-size: 1rem;
+                    font-family: inherit;
+                     transform-origin: 0;
+                     align-self: center;
+                     font-style: italic;
+                     font-weight: 700;
+                     &::after {
+                        position: absolute;
+                        width: 50%;
+                        height: 50%;
+                        border-radius: 50%;
+                        content: '';
+                        bottom: -15px;
+                        left: 25%;
+                        background-color: #ffc10c;
+                        z-index: -1;
+                        transform: rotate3d(15deg)
+                       }
                 }
+                
               }
               @media(max-width:768px) {
                    justify-content: start;  
@@ -99,9 +132,14 @@
 
           h1 {
             align-self: center;
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
+            margin-top: 1rem;
             padding-bottom: 0 ;
+            padding-top: 2rem;
             position: relative;
+            @media(max-width: 768px) {
+                font-size: 2rem;
+            }
            
           }
           span {
@@ -134,4 +172,17 @@
         }
          }
     }
+    @keyframes movedown {
+        0% {
+            transform: translateY(-10px);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(5px);
+            opacity: 0.5;
+          }
+          100% {
+            transform: translateY(0)
+          }
+      }
 }

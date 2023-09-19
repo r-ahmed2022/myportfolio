@@ -112,6 +112,7 @@
             }
             &:hover {
                 transform: scale(2);
+                z-index: 3;
             }
             span {
                 position: absolute;
@@ -129,6 +130,10 @@
                     text-decoration: none;
                     color: #fff;
                  }
+            }
+            .demoicons {
+                color:#ffc10c;
+                font-size: 1.5rem;
             }
             @media(max-width: 768px) {
                 width: 50%;

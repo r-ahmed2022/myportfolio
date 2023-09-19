@@ -6,7 +6,7 @@ import { cssPortfolio,
          reactPortfolio,
          railsPortfolio } from '../../data'
 
-export const Portfolio = () => {
+export const Portfolio = ({ setMenuState }) => {
   const [selected, setSelected] = useState("html/css");
   const [project, setProject] = useState([]);
   const portFolioItems = [
@@ -27,6 +27,11 @@ export const Portfolio = () => {
       name: "Rails Projects"
     },
 ]
+const closeDialog = (e) => {
+  if (e.target === e.currentTarget) {
+    setMenuState(false);
+  }
+};
   useEffect(() => {
 
     switch(selected) {
@@ -51,9 +56,9 @@ export const Portfolio = () => {
   return (
     <div className='portfolio' id='portfolio'>
     <div className="wrapper">
-     <div className="portfolio-tabs-section">
+     <div className="portfolio-tabs-section"  onClick={(e) => closeDialog(e)} >
           <h1>Portfolio</h1>
-          <ul className="portfolio-tabs">
+          <ul className="portfolio-tabs" onClick={(e) => closeDialog(e)}>
             {
                 portFolioItems.map((item) => (
                   <PortfolioList active={selected === item.id} 
@@ -64,13 +69,14 @@ export const Portfolio = () => {
             }
           </ul>
     </div>
-      <div className="projects">
+      <div className="projects" onClick={(e) => closeDialog(e)}>
           {
             project.map((item) => (
               <div className="card">
                  <img src={item.img} alt="pic" className="demoimg" />
                   <span><a href={item.url}>Live link</a></span>
                  <h6>{item.title}</h6>
+                 <i className="fa-brands fa-github fa-xs demoicons"></i>
               </div>
             ))
           }

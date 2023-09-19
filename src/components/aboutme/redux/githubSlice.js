@@ -37,7 +37,7 @@ const githubSlice = createSlice({
         state.loading = 'rejected';
         state.error = action.error.message;
       });
-  }
+  },
 });
 
 export default githubSlice.reducer;

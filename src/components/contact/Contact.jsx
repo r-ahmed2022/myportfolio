@@ -2,10 +2,8 @@
 import React, { useState} from 'react'
 import FormComponent from './FormComponent';
 import input  from './componentData.js'
-import { Map } from '@googlemaps/react-wrapper'
-
 import './Contact.scss'
-const Contact = () => {
+const Contact = ({ setMenuState }) => {
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -21,9 +19,14 @@ const Contact = () => {
       [e.target.name]: e.target.value
      })
     }
+    const closeDialog = (e) => {
+      if (e.target === e.currentTarget) {
+        setMenuState(false);
+      }
+    };
   return (
     <div className="contact" id="contact">
-      <div className="left">
+      <div className="left"  onClick={(e) => closeDialog(e)}>
         <h1>Get in Touch</h1>
         <p style={{
           "font-size": "1.5rem",
@@ -47,7 +50,13 @@ style={{"width": "300px", "height": "200px", "margin":"1rem 0"}}>
           </form>
 
         </div>
+        <footer>
+          <a href="#recommendation">
+            <i className="fa-solid fa-angle-up downarrow arrow"></i>
+          </a>
+        </footer>
       </div>
+    
     </div>
   )
 }
