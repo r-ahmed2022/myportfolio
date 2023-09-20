@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const username = 'r-ahmed2022';
-const token = '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';
+const token = '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';
 
 export const starCountInfo = createAsyncThunk('starCountInfo', async () => {
   const response = await fetch(`https://api.github.com/users/${username}/repos`, {
