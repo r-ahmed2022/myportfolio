@@ -1,13 +1,10 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const username = 'r-ahmed2022';
-const token = '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';
+// const token = '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';
 
 export const gitHubInfo = createAsyncThunk('gitHubInfo', async () => {
   const response = await fetch(`https://api.github.com/users/${username}`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
   });
 
   const data = await response.json();
