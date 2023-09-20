@@ -6,7 +6,7 @@ export const cssPortfolio = [
         'images/cssmagic.png',
     url: 'https://r-ahmed2022.github.io/CSS-magic/',
     githublink: 'https://github.com/r-ahmed2022/CSS-magic',
-
+    description: 'showing power of css',
   },
   {
     id: 2,
@@ -15,6 +15,8 @@ export const cssPortfolio = [
         'images/portfolio.png',
     url: 'https://riysaim.netlify.app/',
     githublink: 'https://github.com/r-ahmed2022/Portfoli-o',
+    description: 'My portfolio in pure Html/Css',
+
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ export const cssPortfolio = [
         'images/natours.png',
     url: 'https://r-ahmed2022.github.io/Natours/',
     githublink: 'https://github.com/r-ahmed2022/Natours',
+    description: 'show casing css skill',
   },
 ];
 
@@ -33,6 +36,7 @@ export const javascriptPortfolio = [
     img: 'images/personal-dashboard.png',
     url: 'https://r-ahmed2022.github.io/Personal-Dashboard/',
     githublink: 'https://github.com/r-ahmed2022/Personal-Dashboard',
+    description: 'A useful chrome extension for personal use',
 
   },
   {
@@ -41,6 +45,7 @@ export const javascriptPortfolio = [
     img: 'images/deckofcards.png',
     url: 'https://r-ahmed2022.github.io/DeckofCards-Game/',
     githublink: 'https://github.com/r-ahmed2022/DeckofCards-Game',
+    description: 'A card game coded in javascript',
 
   },
   {
@@ -49,6 +54,7 @@ export const javascriptPortfolio = [
     img: 'images/movieapp.png',
     url: 'https://r-ahmed2022.github.io/moviesApp/',
     githublink: 'https://github.com/r-ahmed2022/moviesApp',
+    description: 'A movie app',
 
   },
   {
@@ -57,7 +63,7 @@ export const javascriptPortfolio = [
     img: 'images/weather.png',
     url: 'https://r-ahmed2022.github.io/Weather-App/',
     githublink: 'https://github.com/r-ahmed2022/Weather-App',
-
+    description: 'displaying weather of different cities',
   },
 ];
 
@@ -69,7 +75,7 @@ export const reactPortfolio = [
         'images/ramozon.png',
     url: 'https://r-ahmed2022.github.io/ramozon-commerce/',
     githublink: 'https://github.com/r-ahmed2022/ramozon-commerce',
-
+    description: 'An simple E-commerce react app',
 
   },
   {
@@ -79,7 +85,7 @@ export const reactPortfolio = [
         'images/cryptohub.png',
     url: 'https://r-ahmed2022.github.io/cryptohub/',
     githublink: 'https://github.com/r-ahmed2022/cryptohub',
-
+    description: 'A react app displaying cryptocurrency data',
 
   },
   {
@@ -89,8 +95,7 @@ export const reactPortfolio = [
         'images/spacetraveller.png',
     url: 'https://r-ahmed2022.github.io/SpaceTravellerHub/',
     githublink: 'https://github.com/r-ahmed2022/SpaceTravellerHub',
-
-
+    description: 'A react app for booking space travel',
   },
   {
     id: 4,
@@ -99,8 +104,7 @@ export const reactPortfolio = [
           'images/quiziccal.png',
     url: 'https://r-ahmed2022.github.io/quizzical-app/',
     githublink: 'https://github.com/r-ahmed2022/quizzical-app',
-
-
+    description: 'A quiz app developed in react',
   },
 ];
 
@@ -112,6 +116,7 @@ export const railsPortfolio = [
           'images/laptop-carrentals.png',
     url: 'https://supercarsrentals.onrender.com/',
     githublink: 'https://github.com/Itswali/rental-cars-front-end',
+    description: 'A car rental app using react and rails',
 
   },
   {
@@ -121,6 +126,7 @@ export const railsPortfolio = [
         'images/recipeapp.png',
     url: 'https://recipe-app-xhk0.onrender.com/',
     githublink: 'https://github.com/r-ahmed2022/Recipe-App',
+    description: 'A recipe manager app  developed in Rails',
 
   },
   {
@@ -130,6 +136,7 @@ export const railsPortfolio = [
         'images/budgetapp.png',
     url: 'https://budgetapp-3foi.onrender.com/',
     githublink: 'https://github.com/r-ahmed2022/budgetapp',
+    description: 'Money management app',
 
   },
   {
@@ -139,6 +146,7 @@ export const railsPortfolio = [
         'images/blogsphere.png',
     url: 'https://blogsphere-online.onrender.com/',
     githublink: 'https://github.com/r-ahmed2022/blogsphere',
+    description: 'A blog app developed using Rails ',
 
   },
 ];

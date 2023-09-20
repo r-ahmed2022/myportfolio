@@ -86,6 +86,7 @@ export const Portfolio = ({ setMenuState }) => {
                 <span><a href={item.url} target="_blank" rel="noreferrer">Live link</a></span>
                 <h6>{item.title}</h6>
                 <a href={item.githublink} target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xs demoicons" /></a>
+                <small className="desc" style={{ 'font-size': '1rem' }}>{item.description}</small>
               </div>
             ))
           }

@@ -12,7 +12,6 @@ const Navbar = ({ menuState, setMenuState }) => (
           <span />
           <span />
           <span />
-
         </div>
       </div>
       <div className="right">

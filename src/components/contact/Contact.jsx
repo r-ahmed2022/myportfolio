@@ -51,7 +51,7 @@ const Contact = ({ setMenuState }) => {
           id="gmap_canvas"
           frameBorder="0"
           scrolling="no"
-          style={{ width: '300px', height: '200px', margin: '1rem 0' }}
+          style={{ width: '300px', height: '200px', margin: '0rem 0' }}
         />
       </div>
       <div className="right">
