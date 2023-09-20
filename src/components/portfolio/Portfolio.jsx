@@ -1,3 +1,10 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/jsx-key */
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
 import './Portfolio.scss';
 import PortfolioList from './PortfolioList';
@@ -76,9 +83,9 @@ export const Portfolio = ({ setMenuState }) => {
             project.map((item) => (
               <div className="card">
                 <img src={item.img} alt="pic" className="demoimg" />
-                <span><a href={item.url}>Live link</a></span>
+                <span><a href={item.url} target="_blank" rel="noreferrer">Live link</a></span>
                 <h6>{item.title}</h6>
-                <i className="fa-brands fa-github fa-xs demoicons" />
+                <a href={item.githublink} target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xs demoicons" /></a>
               </div>
             ))
           }

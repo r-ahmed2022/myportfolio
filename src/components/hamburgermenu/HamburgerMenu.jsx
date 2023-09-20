@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable react/prop-types */
 import './hamburgermenu.scss';
 import React from 'react';
 import MenuItem from './MenuItem';

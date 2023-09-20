@@ -5,6 +5,7 @@ export const cssPortfolio = [
     img:
         'images/cssmagic.png',
     url: 'https://r-ahmed2022.github.io/CSS-magic/',
+    githublink: 'https://github.com/r-ahmed2022/CSS-magic',
 
   },
   {
@@ -13,15 +14,15 @@ export const cssPortfolio = [
     img:
         'images/portfolio.png',
     url: 'https://riysaim.netlify.app/',
-
+    githublink: 'https://github.com/r-ahmed2022/Portfoli-o',
   },
   {
     id: 3,
     title: 'Natours',
     img:
         'images/natours.png',
-    url: 'https://budgetapp-3foi.onrender.com/',
-
+    url: 'https://r-ahmed2022.github.io/Natours/',
+    githublink: 'https://github.com/r-ahmed2022/Natours',
   },
 ];
 
@@ -31,6 +32,7 @@ export const javascriptPortfolio = [
     title: 'Dashboard',
     img: 'images/personal-dashboard.png',
     url: 'https://r-ahmed2022.github.io/Personal-Dashboard/',
+    githublink: 'https://github.com/r-ahmed2022/Personal-Dashboard',
 
   },
   {
@@ -38,6 +40,7 @@ export const javascriptPortfolio = [
     title: 'DeckofCards',
     img: 'images/deckofcards.png',
     url: 'https://r-ahmed2022.github.io/DeckofCards-Game/',
+    githublink: 'https://github.com/r-ahmed2022/DeckofCards-Game',
 
   },
   {
@@ -45,6 +48,7 @@ export const javascriptPortfolio = [
     title: 'Movie App',
     img: 'images/movieapp.png',
     url: 'https://r-ahmed2022.github.io/moviesApp/',
+    githublink: 'https://github.com/r-ahmed2022/moviesApp',
 
   },
   {
@@ -52,6 +56,7 @@ export const javascriptPortfolio = [
     title: 'Weather App',
     img: 'images/weather.png',
     url: 'https://r-ahmed2022.github.io/Weather-App/',
+    githublink: 'https://github.com/r-ahmed2022/Weather-App',
 
   },
 ];
@@ -63,6 +68,8 @@ export const reactPortfolio = [
     img:
         'images/ramozon.png',
     url: 'https://r-ahmed2022.github.io/ramozon-commerce/',
+    githublink: 'https://github.com/r-ahmed2022/ramozon-commerce',
+
 
   },
   {
@@ -71,6 +78,8 @@ export const reactPortfolio = [
     img:
         'images/cryptohub.png',
     url: 'https://r-ahmed2022.github.io/cryptohub/',
+    githublink: 'https://github.com/r-ahmed2022/cryptohub',
+
 
   },
   {
@@ -79,6 +88,8 @@ export const reactPortfolio = [
     img:
         'images/spacetraveller.png',
     url: 'https://r-ahmed2022.github.io/SpaceTravellerHub/',
+    githublink: 'https://github.com/r-ahmed2022/SpaceTravellerHub',
+
 
   },
   {
@@ -87,6 +98,8 @@ export const reactPortfolio = [
     img:
           'images/quiziccal.png',
     url: 'https://r-ahmed2022.github.io/quizzical-app/',
+    githublink: 'https://github.com/r-ahmed2022/quizzical-app',
+
 
   },
 ];
@@ -98,6 +111,7 @@ export const railsPortfolio = [
     img:
           'images/laptop-carrentals.png',
     url: 'https://supercarsrentals.onrender.com/',
+    githublink: 'https://github.com/Itswali/rental-cars-front-end',
 
   },
   {
@@ -106,6 +120,7 @@ export const railsPortfolio = [
     img:
         'images/recipeapp.png',
     url: 'https://recipe-app-xhk0.onrender.com/',
+    githublink: 'https://github.com/r-ahmed2022/Recipe-App',
 
   },
   {
@@ -114,6 +129,8 @@ export const railsPortfolio = [
     img:
         'images/budgetapp.png',
     url: 'https://budgetapp-3foi.onrender.com/',
+    githublink: 'https://github.com/r-ahmed2022/budgetapp',
+
   },
   {
     id: 4,
@@ -121,6 +138,7 @@ export const railsPortfolio = [
     img:
         'images/blogsphere.png',
     url: 'https://blogsphere-online.onrender.com/',
+    githublink: 'https://github.com/r-ahmed2022/blogsphere',
 
   },
 ];

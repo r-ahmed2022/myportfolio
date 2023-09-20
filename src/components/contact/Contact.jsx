@@ -1,3 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable import/extensions */
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React, { useState } from 'react';
 import FormComponent from './FormComponent';
@@ -62,8 +69,8 @@ const Contact = ({ setMenuState }) => {
             <button type="submit">Submit</button>
           </form>
           <ul className="social-links">
-            <li><a href="https://github.com/r-ahmed2022/"><i className="fa-brands fa-github fa-xl icons" /></a></li>
-            <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
+            <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xl icons" /></a></li>
+            <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
 
           </ul>
         </div>

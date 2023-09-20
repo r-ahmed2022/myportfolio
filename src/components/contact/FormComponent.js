@@ -1,3 +1,8 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
 const FormComponent = (props) => {

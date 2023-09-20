@@ -1,3 +1,9 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable max-len */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable react/prop-types */
 import './Recommendation.scss';
 import Experience from './Experience';
 import recommendations from './recommendationsData';

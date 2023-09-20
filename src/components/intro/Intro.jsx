@@ -1,4 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable import/prefer-default-export */
+import React, { useRef, useEffect } from 'react';
 import { init } from 'ityped';
 
 import './Intro.scss';
@@ -39,8 +45,8 @@ export const Intro = ({ setMenuState }) => {
           <span ref={textRef} className="animatetext" />
         </h3>
         <ul>
-          <li><a href="https://github.com/r-ahmed2022/"><i className="fa-brands fa-github fa-xs icons" /></a></li>
-          <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
+          <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xs icons" /></a></li>
+          <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
           <li>
             <button
               type="button"

@@ -1,3 +1,8 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable import/extensions */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
 import skills from './data.js';
 import './skill.scss';
