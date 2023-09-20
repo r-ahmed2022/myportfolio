@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import './experience.scss';
 
 const Experience = ({ recommendation }) => {
-  const { name, image, place, profession, comment } = recommendation;
+  const {
+    name, image, place, profession, comment,
+  } = recommendation;
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef();
 
@@ -13,7 +15,7 @@ const Experience = ({ recommendation }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); 
+    handleScroll();
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -22,12 +24,17 @@ const Experience = ({ recommendation }) => {
   return (
     <li className={`experience ${isVisible ? 'visible' : ''}`} ref={cardRef}>
       <div className="experience-item">
-        <h4>{name}<span style={{"color":"red"}}>&nbsp;{`(${place})`}</span></h4>
+        <h4>
+          {name}
+          <span style={{ color: 'red' }}>
+            {`(${place})`}
+          </span>
+        </h4>
         <span>
           <img src={image} alt="pic" />
-          <small style={{"margin":"0"}}>{comment}</small>
+          <small style={{ margin: '0' }}>{comment}</small>
         </span>
-        
+
       </div>
     </li>
   );

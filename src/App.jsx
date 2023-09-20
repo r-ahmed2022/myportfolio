@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { Intro } from './components/intro/Intro'; 
-import  Aboutme  from './components/aboutme/Aboutme';
+import { Intro } from './components/intro/Intro';
+import Aboutme from './components/aboutme/Aboutme';
 import { Portfolio } from './components/portfolio/Portfolio';
 import { Recommendation } from './components/recommendations/Recommendation';
 import Contact from './components/contact/Contact';
@@ -11,7 +11,8 @@ import { gitHubInfo } from './components/aboutme/redux/githubSlice';
 import { starCountInfo } from './components/aboutme/redux/starCountSlice';
 
 import './app.scss';
-const  App = () => {
+
+const App = () => {
   const [menuState, setMenuState] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -24,8 +25,8 @@ const  App = () => {
 
   return (
     <div className="app">
-        <Navbar menuState={menuState} setMenuState={setMenuState} />
-        <HamburgerMenu menuState={menuState} setMenuState={setMenuState} />
+      <Navbar menuState={menuState} setMenuState={setMenuState} />
+      <HamburgerMenu menuState={menuState} setMenuState={setMenuState} />
       <div className="main-content">
         <Intro menuState={menuState} setMenuState={setMenuState} />
         <Portfolio menuState={menuState} setMenuState={setMenuState} />
@@ -35,6 +36,6 @@ const  App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;

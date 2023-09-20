@@ -6,8 +6,8 @@ const token = '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';
 export const gitHubInfo = createAsyncThunk('gitHubInfo', async () => {
   const response = await fetch(`https://api.github.com/users/${username}`, {
     headers: {
-      Authorization: `Bearer ${token}`
-    }
+      Authorization: `Bearer ${token}`,
+    },
   });
 
   const data = await response.json();
@@ -16,8 +16,8 @@ export const gitHubInfo = createAsyncThunk('gitHubInfo', async () => {
 
 const initialState = {
   data: null,
-  loading: 'idle', 
-  error: null
+  loading: 'idle',
+  error: null,
 };
 
 const githubSlice = createSlice({

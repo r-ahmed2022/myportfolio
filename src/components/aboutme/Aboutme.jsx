@@ -1,35 +1,53 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 import './aboutme.scss';
 import Skill from './Skill';
 
 const Aboutme = ({ setMenuState }) => {
-  const { data } = useSelector((state) => state?.githubData); 
-  const { starCount } = useSelector((state) => state?.starCountData); 
+  const { data } = useSelector((state) => state?.githubData);
+  const { starCount } = useSelector((state) => state?.starCountData);
 
+  if (!data) { return; }
 
- if(!data)
- return
- 
- const closeDialog = (e) => {
-  if (e.target === e.currentTarget) {
-    setMenuState(false);
-  }
-};
+  const closeDialog = (e) => {
+    if (e.target === e.currentTarget) {
+      setMenuState(false);
+    }
+  };
 
   return (
     <div className="aboutme" id="aboutme">
-      <div className="left"  onClick={(e) => closeDialog(e)}>
-        <h1><span style={{"margin": "0", "padding": "0", "font-size": "4rem"}}>Web Developer</span> based in Kashmir, India!</h1>
+      <div className="left" onClick={(e) => closeDialog(e)}>
+        <h1>
+          <span style={{ margin: '0', padding: '0', 'font-size': '4rem' }}>Web Developer</span>
+          {' '}
+          based in Kashmir, India!
+        </h1>
         <ul className="statistics" onClick={(e) => closeDialog(e)}>
-          <li style={{"padding": "0 1rem","border" : "0"}}>
-            <h3><span style={{"padding" : "0", "margin" : "0",
-             "border" : "none"}}>Contributions</span></h3>
+          <li style={{ padding: '0 1rem', border: '0' }}>
+            <h3>
+              <span style={{
+                padding: '0',
+                margin: '0',
+                border: 'none',
+              }}
+              >
+                Contributions
+              </span>
+            </h3>
             <small>{data.public_repos}</small>
           </li>
           <li>
-          <h3><span style={{"padding" : "0", "margin" : "0",
-             "border" : "none"}}>Stars</span></h3>
+            <h3>
+              <span style={{
+                padding: '0',
+                margin: '0',
+                border: 'none',
+              }}
+              >
+                Stars
+              </span>
+            </h3>
             <small>{starCount}</small>
           </li>
         </ul>
@@ -39,7 +57,7 @@ const Aboutme = ({ setMenuState }) => {
         <Skill />
         <footer>
           <a href="#recommendation">
-            <i className="fa-solid fa-angle-down downarrow"></i>
+            <i className="fa-solid fa-angle-down downarrow" />
           </a>
         </footer>
       </div>

@@ -1,6 +1,6 @@
-import './Recommendation.scss'
-import Experience from './Experience'
-import recommendations from './recommendationsData'
+import './Recommendation.scss';
+import Experience from './Experience';
+import recommendations from './recommendationsData';
 
 export const Recommendation = ({ setMenuState }) => {
   const closeDialog = (e) => {
@@ -9,20 +9,20 @@ export const Recommendation = ({ setMenuState }) => {
     }
   };
   return (
-    <div className='recommendation' id="recommendation" onClick={(e) => closeDialog(e)}>
-     
-     <div className="left"  onClick={(e) => closeDialog(e)}>
+    <div className="recommendation" id="recommendation" onClick={(e) => closeDialog(e)}>
+
+      <div className="left" onClick={(e) => closeDialog(e)}>
         <h1>Recommendations</h1>
-    </div>
-    <div className="right" onClick={(e) => closeDialog(e)}>
-          <ul className="experiences">
-             {
-              recommendations.map((recommendation) => <Experience recommendation={recommendation} key={recommendation.id} id={recommendation.id}/>)
+      </div>
+      <div className="right" onClick={(e) => closeDialog(e)}>
+        <ul className="experiences">
+          {
+              recommendations.map((recommendation) => <Experience recommendation={recommendation} key={recommendation.id} id={recommendation.id} />)
              }
-          </ul>
-          <footer><a href="#contact"><i class="fa-solid fa-angle-down downarrow"></i></a></footer>
+        </ul>
+        <footer><a href="#contact"><i className="fa-solid fa-angle-down downarrow" /></a></footer>
 
       </div>
     </div>
-  )
-}
+  );
+};
