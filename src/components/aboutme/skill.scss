@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
+  position: relative;
   .card {
     display: flex;
     flex-direction: column;
@@ -17,12 +17,12 @@
     box-shadow: 0 0 4px 4px #eee;
     transition: all 2s ease;
 
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
       display: none;
       position: relative;
 
       &.active {
-        width: 80%;
+        width: 70%;
         display: flex;
         margin: 0 0 0 2rem;
       }
@@ -73,41 +73,58 @@
     cursor: pointer;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 960px) {
     .arrow-left,
     .arrow-right {
       display: none;
     }
   }
 
-  @media (max-width: 768px) {
-    width: 100vw;
+  @media (max-width: 960px) {
+    width: 100%;
     height: auto;
     display: unset;
     position: relative;
     padding: 1rem 0;
     flex-wrap: nowrap;
     white-space: nowrap;
-
+    display: flex;
     .arrow-left {
       position: absolute;
-      left: -7px;
+      left: 15px;
       top: 50%;
     }
 
     .arrow-right {
       position: absolute;
-      right: 40px;
+      right: 15px;
       top: 50%;
     }
 
     .card {
-      width: 100%;
+      align-self: center;
       font-size: 50%;
-
+      margin: 0 1rem;
       &:hover {
         transform: scale(1);
       }
     }
+  }
+  @media(min-width: 960px) and (max-width: 1300px) {
+        padding: 0;
+        margin: 0;
+        .card {
+          min-width: 200px;
+          h6 {
+            font-size: 100%;
+          }
+          div {
+             h6 {
+              font-size: 90%;
+             }
+            
+          }
+        }
+       
   }
 }

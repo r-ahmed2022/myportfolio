@@ -134,7 +134,7 @@ export const railsPortfolio = [
     title: 'Budget App',
     img:
         'images/budgetapp.png',
-    url: 'https://budgetapp-3foi.onrender.com/',
+    url: 'https://budget-app-gj5b.onrender.com/',
     githublink: 'https://github.com/r-ahmed2022/budgetapp',
     description: 'Money management app',
 

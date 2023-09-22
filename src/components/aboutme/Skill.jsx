@@ -41,7 +41,7 @@ const Skill = () => {
       </span>
       {skills.map((skill, index) => (
         <div className={`card ${currentSlide === index ? 'active' : ''}`} key={index}>
-          <h6 style={{ 'font-size': '2rem', color: '#ffc01c' }}>{skill.title}</h6>
+          <h6 style={{color: '#ffc01c' }}>{skill.title}</h6>
           {skill.tech.map((item, techIndex) => (
             <div key={techIndex}>
               <img src={item.img} className="skill-img" alt="" />

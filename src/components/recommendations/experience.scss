@@ -123,5 +123,17 @@
       left: -289px;
     }
   }
+  @media(min-width: 768px) and (max-width: 1150px) {
+    .experience {
+      &:last-child div {
+          display: none;
+        }
+    
+      &:last-child::after {
+          display: none;
+        }
+      
+    }
+}
 }
 
