@@ -83,7 +83,7 @@ export const Portfolio = ({ setMenuState }) => {
             project.map((item) => (
               <div className="card">
                 <img src={item.img} alt="pic" className="demoimg" />
-                <span><a href={item.url} target="_blank" rel="noreferrer">Live link</a></span>
+                <span><a href={item.url} target="_blank" rel="noreferrer">Live demo</a></span>
                 <h6>{item.title}</h6>
                 <a href={item.githublink} target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xs demoicons" /></a>
                 <small className="desc" style={{ 'font-size': '1rem' }}>{item.description}</small>
