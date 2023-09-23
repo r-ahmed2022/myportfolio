@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
