@@ -6,12 +6,15 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import FormComponent from './FormComponent';
 import input from './componentData.js';
 import './Contact.scss';
 
 const Contact = ({ setMenuState }) => {
+  const ref = useRef();
+  const [success, setSuccess] = useState(null);
   const [values, setValues] = useState({
     username: '',
     email: '',
@@ -20,8 +23,17 @@ const Contact = ({ setMenuState }) => {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
+    emailjs.sendForm('service_dubz95s', 'template_nwmnasi', ref.current,
+      'IpD0p6arW-NVvf_ij')
+      .then((result) => {
+        setSuccess(true);
+        console.log(result);
+      }, (error) => {
+        setSuccess(false);
+        console.log(error.text);
+      });
   };
+
   const handleChange = (e) => {
     setValues({
       ...values,
@@ -57,7 +69,7 @@ const Contact = ({ setMenuState }) => {
       <div className="right">
         <div className="formcontainer">
 
-          <form onSubmit={handleSubmit}>
+          <form ref={ref} onSubmit={handleSubmit}>
             {input.map((input) => (
               <FormComponent
                 key={input.id}
@@ -67,6 +79,7 @@ const Contact = ({ setMenuState }) => {
               />
             ))}
             <button type="submit">Submit</button>
+            {success ? <span>Sent message, will get back soon</span> : ''}
           </form>
           <ul className="social-links">
             <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xl icons" /></a></li>

@@ -1,7 +1,7 @@
 const input = [
   {
     id: 1,
-    name: 'username',
+    name: 'name',
     type: 'text',
     placeholder: 'Username',
     errorMessage: 'Username should be 3-8 characters, and must not include special characters',

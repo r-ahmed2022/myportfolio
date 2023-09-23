@@ -124,7 +124,7 @@ export const railsPortfolio = [
     title: 'Recipe App',
     img:
         'images/recipeapp.png',
-    url: 'https://recipe-app-xhk0.onrender.com/',
+    url: 'https://recipemanager.onrender.com',
     githublink: 'https://github.com/r-ahmed2022/Recipe-App',
     description: 'A recipe manager app  developed in Rails',
 
