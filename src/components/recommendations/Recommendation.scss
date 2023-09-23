@@ -6,8 +6,7 @@
   background-color: transparent;
   display: flex;
   justify-content: center;
-  overflow-y: auto;
-  scroll-behavior: smooth; 
+  
   .left {
     flex: 0.4;
     align-self: center;
@@ -59,13 +58,13 @@
 
       .experiences {
         height: auto;
-        padding-left: 5rem;
+        padding-left: 0rem;
 
         li {
           margin-bottom: 0;
 
           div {
-            min-height: 100px;
+            height: auto;
           }
         }
       }
@@ -93,5 +92,7 @@
 
   @media(min-width: 768px) and (max-width: 1150px) {
        display: grid;
+       grid-template-rows: auto;
   }
+
 }
