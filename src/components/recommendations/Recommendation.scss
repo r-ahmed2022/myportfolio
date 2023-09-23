@@ -12,6 +12,7 @@
     align-self: center;
     align-items: center;
     padding-left: 1rem;
+   
   }
 
   .right {
@@ -83,12 +84,19 @@
       order: 2;
 
       h1 {
-        font-size: 5rem;
         margin-top: 1rem;
         align-self: center;
+     
       }
     }
   }
+    @media(max-width: 768px) and (max-height: 600px) {
+        .left {
+          h1 {
+           font-size: 4rem;
+          }
+        }
+       }
 
   @media(min-width: 768px) and (max-width: 1150px) {
        display: grid;
