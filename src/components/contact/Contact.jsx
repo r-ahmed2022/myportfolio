@@ -30,7 +30,7 @@ const Contact = ({ setMenuState }) => {
         console.log(result);
       }, (error) => {
         setSuccess(false);
-        console.log(error.text);
+        console.log(error);
       });
   };
 
@@ -44,6 +44,11 @@ const Contact = ({ setMenuState }) => {
     if (e.target === e.currentTarget) {
       setMenuState(false);
     }
+  };
+
+  const styles = {
+    color: success ? 'green' : 'red',
+    fontSize: '1.5rem',
   };
   return (
     <div className="contact" id="contact">
@@ -68,7 +73,6 @@ const Contact = ({ setMenuState }) => {
       </div>
       <div className="right">
         <div className="formcontainer">
-
           <form ref={ref} onSubmit={handleSubmit}>
             {input.map((input) => (
               <FormComponent
@@ -79,13 +83,15 @@ const Contact = ({ setMenuState }) => {
               />
             ))}
             <button type="submit">Submit</button>
-            {success ? <span>Sent message, will get back soon</span> : ''}
           </form>
+          {success ? <span style={styles}>Sent message, will get back soon, Thanks</span>
+            : <span style={styles}>Message not sent, check again</span> }
           <ul className="social-links">
             <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xl icons" /></a></li>
             <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
 
           </ul>
+
         </div>
         <footer>
           <a href="#recommendation">
