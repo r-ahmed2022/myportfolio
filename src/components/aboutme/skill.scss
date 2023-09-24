@@ -56,6 +56,18 @@
     &:hover {
       transform: scale(1.2);
     }
+    @media(max-width: 400px) and (max-height: 700px) {
+       div {
+         h6 {
+          font-size: 1rem;
+         }
+         img {
+          width: 25px;
+          height: auto;
+         }
+        
+      }
+    }
   }
 
   .arrow-left {
@@ -105,7 +117,7 @@
       align-self: center;
       font-size: 50%;
       margin: 0 1rem;
-      &:hover {
+       &:hover {
         transform: scale(1);
       }
     }

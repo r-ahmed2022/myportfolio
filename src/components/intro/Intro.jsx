@@ -46,7 +46,7 @@ export const Intro = ({ setMenuState }) => {
           <span ref={textRef} className="animatetext" />
         </h3>
         <ul>
-          <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xs icons" /></a></li>
+          <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><img src="images/github.png" className="icons" alt="github" /></a></li>
           <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
           <li>
             <button

@@ -153,11 +153,22 @@
 
       
     }
-    @media(max-width: 768px) and (max-height: 600px) {
-       padding-top: 3rem;
-       .statistics {
-
-       }
+    @media(max-width: 400px) and (max-height: 600px) {
+      font-size: 65%;
+        h1 {
+          font-size: initial;
+          span {
+             font-size: initial;
+          }
+        }
+        .statistics {
+            li {
+              small {
+                font-size: initial;
+              }
+            }
+        }
+       
     }
   }
 
