@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-expressions */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable import/extensions */
 /* eslint-disable react/prop-types */
@@ -15,22 +17,23 @@ import './Contact.scss';
 const Contact = ({ setMenuState }) => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
+  const [message, setMessage] = useState('');
   const [values, setValues] = useState({
-    username: '',
+    name: '',
     email: '',
-    comment: '',
+    message: '',
     isTextarea: false,
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_dubz95s', 'template_nwmnasi', ref.current,
+    emailjs.send('service_dubz95s', 'template_nwmnasi', values,
       'IpD0p6arW-NVvf_ij')
       .then((result) => {
         setSuccess(true);
-        console.log(result);
+        setMessage(result.text ? `${result.text}, Thanks! Will get back soon.` : '');
       }, (error) => {
         setSuccess(false);
-        console.log(error);
+        setMessage(error ? `Something ${error.text.substring(17, 25)}. Please try again.` : '');
       });
   };
 
@@ -39,6 +42,7 @@ const Contact = ({ setMenuState }) => {
       ...values,
       [e.target.name]: e.target.value,
     });
+    setMessage('');
   };
   const closeDialog = (e) => {
     if (e.target === e.currentTarget) {
@@ -73,9 +77,10 @@ const Contact = ({ setMenuState }) => {
       </div>
       <div className="right">
         <div className="formcontainer">
-          <form ref={ref} onSubmit={handleSubmit}>
+          <form ref={ref} onSubmit={handleSubmit} id="form1">
             {input.map((input) => (
               <FormComponent
+                name={input.name}
                 key={input.id}
                 {...input}
                 value={values[input.name]}
@@ -84,8 +89,8 @@ const Contact = ({ setMenuState }) => {
             ))}
             <button type="submit">Submit</button>
           </form>
-          {success ? <span style={styles}>Sent message, will get back soon, Thanks</span>
-            : <span style={styles}>Message not sent, check again</span> }
+          {success ? <span style={styles}>{message}</span>
+            : <span style={styles}>{message}</span> }
           <ul className="social-links">
             <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xl icons" /></a></li>
             <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
