@@ -4,6 +4,9 @@
   align-self: center;
   padding: 20px 0;
   list-style: none;
+  @media(max-height: 700px) {
+    
+}
   
   .experience {
     position: relative;
@@ -13,6 +16,7 @@
     color: #000;
     margin: 0 auto;
     padding-top: 20px;
+   
 
     &::after {
       background: #ffc10c;
@@ -24,6 +28,7 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: 0;
+     
     }
 
     &:last-child::after {

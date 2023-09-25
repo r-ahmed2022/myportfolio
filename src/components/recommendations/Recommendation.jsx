@@ -19,6 +19,8 @@ export const Recommendation = ({ setMenuState }) => {
 
       <div className="left" onClick={(e) => closeDialog(e)}>
         <h1>Recommendations</h1>
+        <footer><a href="#contact"><i className="fa-solid fa-angle-down downarrow" /></a></footer>
+
       </div>
       <div className="right" onClick={(e) => closeDialog(e)}>
         <ul className="experiences">
@@ -26,7 +28,6 @@ export const Recommendation = ({ setMenuState }) => {
               recommendations.map((recommendation) => <Experience recommendation={recommendation} key={recommendation.id} id={recommendation.id} />)
              }
         </ul>
-        <footer><a href="#contact"><i className="fa-solid fa-angle-down downarrow" /></a></footer>
 
       </div>
     </div>
