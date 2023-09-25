@@ -169,6 +169,10 @@
             text-decoration: none;
             color: #fff;
           }
+          @media(max-width:800px) {
+             top: 45px;
+             right: 7%;
+          }
         }
 
         .demoicons {
