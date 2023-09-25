@@ -96,22 +96,28 @@
     width: 100%;
     height: auto;
     display: unset;
-    position: relative;
     padding: 1rem 0;
     flex-wrap: nowrap;
     white-space: nowrap;
     display: flex;
-    .arrow-left {
-      position: absolute;
-      left: 15px;
-      top: 50%;
+    span {
+      position: relative;
+      .arrow-left {
+        position: absolute;
+        left: -15px;
+        top: 50%;
+      }
     }
-
-    .arrow-right {
-      position: absolute;
-      right: 15px;
-      top: 50%;
+   
+    span {
+      position: relative;
+      .arrow-right {
+        position: absolute;
+        right: -25px;
+        top: 50%;
+      }
     }
+  
 
     .card {
       align-self: center;
@@ -139,4 +145,6 @@
         }
        
   }
+
+
 }
