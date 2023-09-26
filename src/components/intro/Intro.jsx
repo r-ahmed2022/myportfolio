@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
@@ -46,8 +47,8 @@ export const Intro = ({ setMenuState }) => {
           <span ref={textRef} className="animatetext" />
         </h3>
         <ul>
-          <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><img src="images/github.png" className="icons" alt="github" /></a></li>
-          <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src="images/linkedin.png" className="icons" alt="linkedin" /></a></li>
+          <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/images/github.png`} className="icons" alt="github" /></a></li>
+          <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/images/linkedin.png`} className="icons" alt="linkedin" /></a></li>
           <li>
             <button
               type="button"
@@ -63,7 +64,12 @@ export const Intro = ({ setMenuState }) => {
       </div>
       <div className="right-section">
         <div className="pic-section">
-          <img src="images/mypic3.png" className="mypic" alt="mypicture" />
+          <img src="/images/mypic3.png" className="mypic" alt="mypicture" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/mypic3.png`}
+            alt="pic"
+          />
+
         </div>
       </div>
 

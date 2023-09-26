@@ -33,7 +33,7 @@ const Experience = ({ recommendation }) => {
           </span>
         </h4>
         <span>
-          <img src={image} alt="pic" />
+          <img src={`${process.env.PUBLIC_URL}/${image}`} alt="pic" />
           <small style={{ margin: '0' }}>{comment}</small>
         </span>
 

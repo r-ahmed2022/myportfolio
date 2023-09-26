@@ -44,7 +44,7 @@ const Skill = () => {
           <h6 style={{ color: '#ffc01c' }}>{skill.title}</h6>
           {skill.tech.map((item, techIndex) => (
             <div key={techIndex}>
-              <img src={item.img} className="skill-img" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/${item.img}`} className="skill-img" alt="" />
               <h6 className="skill-name">{item.name}</h6>
             </div>
           ))}

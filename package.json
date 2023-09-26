@@ -26,7 +26,7 @@
     "react-scripts": "5.0.1",
     "react-spring": "^9.7.2",
     "redux": "^4.2.1",
-    "sass": "^1.66.1",
+    "sass": "^1.68.0",
     "typewriter": "^9.1.0",
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"
