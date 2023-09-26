@@ -11,7 +11,7 @@ export const cssPortfolio = [
   },
   {
     id: 2,
-    title: 'Portfolio',
+    title: 'My Portfolio',
     img:
         'images/portfolio.png',
     url: 'https://riysaim.netlify.app/',
@@ -34,7 +34,7 @@ export const cssPortfolio = [
 export const javascriptPortfolio = [
   {
     id: 1,
-    title: 'Dashboard',
+    title: 'Personal Dashboard',
     img: 'images/personal-dashboard.png',
     url: 'https://r-ahmed2022.github.io/Personal-Dashboard/',
     githublink: 'https://github.com/r-ahmed2022/Personal-Dashboard',
@@ -43,7 +43,7 @@ export const javascriptPortfolio = [
   },
   {
     id: 2,
-    title: 'DeckofCards',
+    title: 'DeckofCards Game',
     img: 'images/deckofcards.png',
     url: 'https://r-ahmed2022.github.io/DeckofCards-Game/',
     githublink: 'https://github.com/r-ahmed2022/DeckofCards-Game',
@@ -75,7 +75,7 @@ export const javascriptPortfolio = [
 export const reactPortfolio = [
   {
     id: 1,
-    title: 'Commerce',
+    title: 'E-Commerce App',
     img:
         'images/ramozon.png',
     url: 'https://r-ahmed2022.github.io/ramozon-commerce/',
@@ -85,7 +85,7 @@ export const reactPortfolio = [
   },
   {
     id: 2,
-    title: 'CryptoHub',
+    title: 'CryptoHub App',
     img:
         'images/cryptohub.png',
     url: 'https://r-ahmed2022.github.io/cryptohub/',
@@ -95,7 +95,7 @@ export const reactPortfolio = [
   },
   {
     id: 3,
-    title: 'SpaceHub',
+    title: 'SpaceHub App',
     img:
         'images/spacetraveller.png',
     url: 'https://r-ahmed2022.github.io/SpaceTravellerHub/',
@@ -106,7 +106,7 @@ export const reactPortfolio = [
   },
   {
     id: 4,
-    title: 'Quiziccal',
+    title: 'Quiziccal App',
     img:
           'images/quiziccal.png',
     url: 'https://r-ahmed2022.github.io/quizzical-app/',
@@ -120,7 +120,7 @@ export const reactPortfolio = [
 export const railsPortfolio = [
   {
     id: 1,
-    title: 'Car Rentals',
+    title: 'Car Rentals App',
     img:
           'images/laptop-carrentals.png',
     url: 'https://supercarsrentals.onrender.com/',
@@ -151,7 +151,7 @@ export const railsPortfolio = [
   },
   {
     id: 4,
-    title: 'BlogsSphere',
+    title: 'BlogsSphere App',
     img:
         'images/blogsphere.png',
     url: 'https://blogsphere-online.onrender.com/',
