@@ -82,11 +82,22 @@ export const Portfolio = ({ setMenuState }) => {
           {
             project.map((item) => (
               <div className="card">
-                <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt="pic" className="demoimg" />
-                <span><a href={item.url} target="_blank" rel="noreferrer">Live demo</a></span>
-                <h6>{item.title}</h6>
-                <a href={item.githublink} target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-xs demoicons" /></a>
-                <small className="desc" style={{ 'font-size': '1rem' }}>{item.description}</small>
+                <div className="card-side card-side-front">
+                  <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt="pic" className="demoimg" />
+                  <h6>{item.title}</h6>
+                </div>
+                <div className="card-side card-side-back">
+                  <div className="summary">
+                    <p className="desc">{item.description}</p>
+                    <ul className="stack">
+                      {
+                      item.techstack.map((stack) => <li>{stack}</li>)
+                     }
+                    </ul>
+                    <span><a href={item.url} target="_blank" rel="noreferrer">Live demo</a></span>
+
+                  </div>
+                </div>
               </div>
             ))
           }

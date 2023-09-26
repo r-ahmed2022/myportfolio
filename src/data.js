@@ -7,6 +7,7 @@ export const cssPortfolio = [
     url: 'https://r-ahmed2022.github.io/CSS-magic/',
     githublink: 'https://github.com/r-ahmed2022/CSS-magic',
     description: 'showing power of css',
+    techstack: ['html', 'css'],
   },
   {
     id: 2,
@@ -16,7 +17,7 @@ export const cssPortfolio = [
     url: 'https://riysaim.netlify.app/',
     githublink: 'https://github.com/r-ahmed2022/Portfoli-o',
     description: 'My portfolio in pure Html/Css',
-
+    techstack: ['html', 'css'],
   },
   {
     id: 3,
@@ -26,6 +27,7 @@ export const cssPortfolio = [
     url: 'https://r-ahmed2022.github.io/Natours/',
     githublink: 'https://github.com/r-ahmed2022/Natours',
     description: 'show casing css skill',
+    techstack: ['html', 'css'],
   },
 ];
 
@@ -37,7 +39,7 @@ export const javascriptPortfolio = [
     url: 'https://r-ahmed2022.github.io/Personal-Dashboard/',
     githublink: 'https://github.com/r-ahmed2022/Personal-Dashboard',
     description: 'A useful chrome extension for personal use',
-
+    techstack: ['html', 'css', 'javscript'],
   },
   {
     id: 2,
@@ -46,7 +48,7 @@ export const javascriptPortfolio = [
     url: 'https://r-ahmed2022.github.io/DeckofCards-Game/',
     githublink: 'https://github.com/r-ahmed2022/DeckofCards-Game',
     description: 'A card game coded in javascript',
-
+    techstack: ['html', 'css', 'javscript'],
   },
   {
     id: 3,
@@ -55,6 +57,7 @@ export const javascriptPortfolio = [
     url: 'https://r-ahmed2022.github.io/moviesApp/',
     githublink: 'https://github.com/r-ahmed2022/moviesApp',
     description: 'A movie app',
+    techstack: ['html', 'css', 'javscript'],
 
   },
   {
@@ -64,6 +67,8 @@ export const javascriptPortfolio = [
     url: 'https://r-ahmed2022.github.io/Weather-App/',
     githublink: 'https://github.com/r-ahmed2022/Weather-App',
     description: 'displaying weather of different cities',
+    techstack: ['html', 'css', 'javscript'],
+
   },
 ];
 
@@ -76,7 +81,7 @@ export const reactPortfolio = [
     url: 'https://r-ahmed2022.github.io/ramozon-commerce/',
     githublink: 'https://github.com/r-ahmed2022/ramozon-commerce',
     description: 'An simple E-commerce react app',
-
+    techstack: ['html/css', 'javscript', 'React'],
   },
   {
     id: 2,
@@ -86,7 +91,7 @@ export const reactPortfolio = [
     url: 'https://r-ahmed2022.github.io/cryptohub/',
     githublink: 'https://github.com/r-ahmed2022/cryptohub',
     description: 'A react app displaying cryptocurrency data',
-
+    techstack: ['html/css', 'javscript', 'React'],
   },
   {
     id: 3,
@@ -96,6 +101,8 @@ export const reactPortfolio = [
     url: 'https://r-ahmed2022.github.io/SpaceTravellerHub/',
     githublink: 'https://github.com/r-ahmed2022/SpaceTravellerHub',
     description: 'A react app for booking space travel',
+    techstack: ['html/css', 'javscript', 'React'],
+
   },
   {
     id: 4,
@@ -105,6 +112,8 @@ export const reactPortfolio = [
     url: 'https://r-ahmed2022.github.io/quizzical-app/',
     githublink: 'https://github.com/r-ahmed2022/quizzical-app',
     description: 'A quiz app developed in react',
+    techstack: ['html/css', 'javscript', 'React'],
+
   },
 ];
 
@@ -117,6 +126,7 @@ export const railsPortfolio = [
     url: 'https://supercarsrentals.onrender.com/',
     githublink: 'https://github.com/Itswali/rental-cars-front-end',
     description: 'A car rental app using react and rails',
+    techstack: ['html/css', 'React', 'Rails'],
 
   },
   {
@@ -127,7 +137,7 @@ export const railsPortfolio = [
     url: 'https://recipemanager.onrender.com',
     githublink: 'https://github.com/r-ahmed2022/Recipe-App',
     description: 'A recipe manager app  developed in Rails',
-
+    techstack: ['html/css', 'React', 'Rails'],
   },
   {
     id: 3,
@@ -137,7 +147,7 @@ export const railsPortfolio = [
     url: 'https://budget-app-gj5b.onrender.com/',
     githublink: 'https://github.com/r-ahmed2022/budgetapp',
     description: 'Money management app',
-
+    techstack: ['html/css', 'React', 'Rails'],
   },
   {
     id: 4,
@@ -147,6 +157,6 @@ export const railsPortfolio = [
     url: 'https://blogsphere-online.onrender.com/',
     githublink: 'https://github.com/r-ahmed2022/blogsphere',
     description: 'A blog app developed using Rails ',
-
+    techstack: ['html/css', 'React', 'Rails'],
   },
 ];
