@@ -32,7 +32,7 @@ export const Intro = ({ setMenuState }) => {
   };
 
   const openResumePDF = () => {
-    const pdfURL = 'Riyaz-CV-developer.pdf';
+    const pdfURL = `${process.env.PUBLIC_URL}/Riyaz-CV-developer.pdf`;
     window.open(pdfURL, '_blank');
   };
 
