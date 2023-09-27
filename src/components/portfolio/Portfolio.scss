@@ -103,7 +103,8 @@
   
       .card {
         width: 200px;
-        min-height: 200px;
+        height: auto;
+        min-height: 230px;
         margin: 1.5rem;
         -moz-perspective: 150rem;
         perspective: 150rem;
