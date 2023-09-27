@@ -10,7 +10,7 @@ const recommendations = [
   {
     id: 2,
     name: 'Joy Phoebe Onyando',
-    image: 'images/joy.jpeg',
+    image: 'images/Joy.jpeg',
     profession: 'Full-stack Developer',
     place: 'Kenya',
     comment: 'Throughout our time working together, Riyaz consistently demonstrated a deep understanding of various platforms, tools and programming languages like Ruby, React, Redux and JavaScript.',
