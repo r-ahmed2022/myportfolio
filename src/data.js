@@ -26,7 +26,7 @@ export const cssPortfolio = [
         'images/natours.png',
     url: 'https://r-ahmed2022.github.io/Natours/',
     githublink: 'https://github.com/r-ahmed2022/Natours',
-    description: 'Tourn & Travels site, showcasing advanced css, and animation',
+    description: 'Tour & Travels site, showcasing advanced css, and animation',
     techstack: ['html', 'css'],
   },
 ];
