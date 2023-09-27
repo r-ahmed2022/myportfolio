@@ -71,7 +71,7 @@
       form {
         width: 60%;
         min-height: auto;
-        box-shadow: -1px -1px 2px 2px #ccc;
+        box-shadow: 0px 0px 2px 2px #ccc inset;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -85,12 +85,18 @@
 
         input {
           padding: 0.5rem 1rem;
+          border: none;
+          box-shadow: 0px 0px 1px 2px #ccc inset;
         }
-
+        textarea {
+          border: none;
+          box-shadow: 0px 0px 1px 2px #ccc inset;
+        }
 
         input:invalid[focused="true"] {
           display: block;
           border: 1px solid red;
+          box-shadow: none;
         }
 
         span {
@@ -152,10 +158,21 @@
      }
 
   }
- 
-
+  @media(max-width: 768px) and (max-height: 600px) {
+   
+  }
+   
   }
   @media (max-width: 768px) {
     flex-direction: column;
+     }
+     @media(max-width: 500px) and (max-height: 600px) {
+      padding: .7rem 0;
+        .left {
+            h1 {
+              margin-top: .5rem;
+              font-size: 3rem;
+            }
+        }
      }
 }
