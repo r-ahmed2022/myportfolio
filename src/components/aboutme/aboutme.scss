@@ -66,6 +66,10 @@
       align-items: start;
       font-size: 0.8rem;
       margin-left: 0rem;
+      @media(min-width: 1300px) {
+        margin-left: 8%;
+        padding-left: 2%;
+      }
 
       li {
         display: inline-block;
@@ -153,21 +157,7 @@
 
       
     }
-    @media(min-width: 1300px) {
-      padding-top: 2rem;
-      justify-content: center;
-      h1 {
-        text-align: left;
-        span {
-          font-size: 5rem;
-        }
-      }
-      .statistics {
-        
-       }
-
-    
-  }
+  
     @media(max-width: 400px) and (max-height: 600px) {
         h1 {
             margin-top: 1rem;
@@ -185,6 +175,7 @@
         }
        
     }
+ 
   }
 
   .right {
