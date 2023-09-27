@@ -233,7 +233,10 @@
       a {
         text-decoration: none;
         color: #000;
-
+        .uparrow {
+          font-size: 4rem;
+          animation: upArrow 4s ease infinite;
+        }
         .downarrow {
           font-size: 4rem;
           align-self: center;

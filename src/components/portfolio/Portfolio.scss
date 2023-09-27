@@ -104,7 +104,7 @@
       .card {
         width: 200px;
         height: auto;
-        min-height: 230px;
+        min-height: 200px;
         margin: 1.5rem;
         -moz-perspective: 150rem;
         perspective: 150rem;
@@ -255,12 +255,16 @@
         margin-bottom: 1rem;
 
         a {
+          width: auto;
+          height: auto;
           text-decoration: none;
           color: #000;
-
+          .uparrow {
+            font-size: 4rem;
+            animation: upArrow 4s ease infinite;
+          }
           .downarrow {
             font-size: 4rem;
-            align-self: center;
             animation: moveArrow 4s ease infinite;
           }
         }
@@ -279,6 +283,16 @@
         
       }
       
+    }
+  }
+  @keyframes upArrow {
+    0% {
+      transform: translate(0, 5px);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
     }
   }
 }

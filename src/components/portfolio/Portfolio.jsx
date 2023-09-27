@@ -101,7 +101,15 @@ export const Portfolio = ({ setMenuState }) => {
               </div>
             ))
           }
-          <footer><a href="#aboutme"><i className="fa-solid fa-angle-down downarrow" /></a></footer>
+          <footer>
+            <a href="#intro">
+              <i className="fa-solid fa-angle-up uparrow" />
+            </a>
+            <a href="#aboutme">
+              <i className="fa-solid fa-angle-down downarrow" />
+            </a>
+
+          </footer>
 
         </div>
 

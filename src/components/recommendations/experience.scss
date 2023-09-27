@@ -4,10 +4,7 @@
   align-self: center;
   padding: 20px 0;
   list-style: none;
-  @media(max-height: 700px) {
-    
-}
-  
+
   .experience {
     position: relative;
     width: 4px;
@@ -129,6 +126,9 @@
       left: -289px;
     }
   }
+
+  
+
   @media(min-width: 768px) and (max-width: 1150px) {
     .experience {
       &:last-child div {
@@ -145,7 +145,7 @@
 @media(max-width: 500px) and (max-height: 600px) {
 
   .experience {
-
+    
     &:nth-child(2) div {
       display: none;
     }
@@ -160,8 +160,18 @@
     &:last-child::after {
         display: none;
       }
+
+      div {
+        width: 200px;
+        * > { font-size: 1rem; }
+      }
+  
+      & > div {
+        left: 10px;
+      }
     
   }
+ 
   }
 }
 

@@ -58,6 +58,9 @@ const Aboutme = ({ setMenuState }) => {
         <h1>Skillset</h1>
         <Skill />
         <footer>
+          <a href="#portfolio">
+            <i className="fa-solid fa-angle-up uparrow" />
+          </a>
           <a href="#recommendation">
             <i className="fa-solid fa-angle-down downarrow" />
           </a>
