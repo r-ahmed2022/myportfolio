@@ -46,7 +46,7 @@ export const javascriptPortfolio = [
     img: 'images/deckofcards.png',
     url: 'https://r-ahmed2022.github.io/DeckofCards-Game/',
     githublink: 'https://github.com/r-ahmed2022/DeckofCards-Game',
-    description: 'A card game showcasiung advanced javascript skills',
+    description: 'A card game showcasing advanced javascript skills',
     techstack: ['html', 'css', 'javscript'],
   },
   {
