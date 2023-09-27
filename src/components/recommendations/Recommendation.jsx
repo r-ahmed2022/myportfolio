@@ -18,7 +18,11 @@ export const Recommendation = ({ setMenuState }) => {
     <div className="recommendation" id="recommendation" onClick={(e) => closeDialog(e)}>
 
       <div className="left" onClick={(e) => closeDialog(e)}>
-        <h1>Recommendations</h1>
+        <h1 style={{ textAlign: 'center' }}>
+          <span style={{ color: '#ffc01c' }}>Professional</span>
+          <br />
+          Recommendations
+        </h1>
         <footer>
           <a href="#aboutme">
             <i className="fa-solid fa-angle-up uparrow" />
