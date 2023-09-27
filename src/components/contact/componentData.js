@@ -26,7 +26,7 @@ const input = [
     name: 'message',
     label: 'Message',
     isTextarea: true,
-    placeholder: 'Leave your messsage here!',
+    placeholder: 'Leave your valuable messsage here!',
     errorMessage: 'characters must be 10-28 , and cannot include special character',
     pattern: '^[A-Za-z0-9]{2,100}$',
     required: true,
