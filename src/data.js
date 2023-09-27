@@ -6,7 +6,7 @@ export const cssPortfolio = [
         'images/cssmagic.png',
     url: 'https://r-ahmed2022.github.io/CSS-magic/',
     githublink: 'https://github.com/r-ahmed2022/CSS-magic',
-    description: 'A app showcasing different container layouts in response to different screen sizes',
+    description: 'A app showcasing, container layouts switching in response to different screen sizes',
     techstack: ['html', 'css'],
   },
   {
@@ -30,7 +30,6 @@ export const cssPortfolio = [
     techstack: ['html', 'css'],
   },
 ];
-
 export const javascriptPortfolio = [
   {
     id: 1,
