@@ -29,6 +29,7 @@
     h1 {
       font-size: 3rem;
       margin-left: 1rem;
+      position: relative;
       @media (max-width: 960px) {
         font-size: auto;
         text-align: center;
@@ -181,12 +182,28 @@
        
     }
     .moreinfo {
-       font-size: 1.5rem;
-       color:#1c1c1c;
+      position: absolute;
+       width: max-content;
+       display: inline-block;
        cursor: pointer;
+       height: auto;
+       right: -5px;
+       bottom: -20px;
+       font-size: 1.5rem;
+       border-radius: 1rem;
+       padding: .2rem .5rem;
+       color:#1c1c1c;
+       font-weight: 700;
+       text-decoration: none;
+       background-color: #ffc10c;
+       color: #1c1c1c;
+       border: none;
+       box-shadow: 0 1.5rem 4rem #1c1c1c;
        &:hover {
         transition: all 2s ease;
         color: #ffc10c;
+        cursor: pointer;
+
        }
        @media(max-width: 500px) {
         font-size: 1rem;
