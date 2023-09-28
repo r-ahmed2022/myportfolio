@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/no-unescaped-entities */
@@ -7,6 +9,8 @@ import './modal.scss';
 
 const Modal = ({ handleCloseModal, hovered }) => (
   <div className={`modal-content ${hovered ? 'active' : 'modal-content'}`} onMouseLeave={handleCloseModal}>
+    <small className="close" onClick={handleCloseModal}>&times;</small>
+
     <h1>About Me</h1>
 
     <p style={{ textAlign: 'center' }}>
