@@ -39,7 +39,7 @@ const Aboutme = ({ setMenuState }) => {
             Web Developer
           </span>
           based in Kashmir, India!
-          <button type="button" onMouseEnter={handleOpenModal} className="moreinfo">See more..</button>
+          <button type="button" onMouseEnter={handleOpenModal} className="moreinfo">About me</button>
         </h1>
         <ul className="statistics" onClick={(e) => closeDialog(e)}>
           <li style={{ padding: '0 1rem', border: '0' }}>

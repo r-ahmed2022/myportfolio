@@ -40,12 +40,13 @@ export const Intro = ({ setMenuState }) => {
     <div className="intro" id="intro">
 
       <div className="left-section" onClick={(e) => closeDialog(e)}>
-        <h2>Hi there, I'm &#128075;</h2>
-        <h1>Riyaz Ahmed</h1>
         <h3>
           Full Stack
           <span ref={textRef} className="animatetext" />
+          &#128075;
         </h3>
+        <h1>Riyaz Ahmed</h1>
+
         <ul>
           <li><a href="https://github.com/r-ahmed2022/" target="_blank" rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/images/github.png`} className="icons" alt="github" /></a></li>
           <li><a href="https://www.linkedin.com/in/riyazahmedmicroverse" target="_blank" rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/images/linkedin.png`} className="icons" alt="linkedin" /></a></li>

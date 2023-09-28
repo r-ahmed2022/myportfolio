@@ -11,10 +11,10 @@ const Modal = ({ handleCloseModal, hovered }) => (
   <div className={`modal-content ${hovered ? 'active' : 'modal-content'}`} onMouseLeave={handleCloseModal}>
     <small className="close" onClick={handleCloseModal}>&times;</small>
 
-    <h1>About Me</h1>
+    <h2>Hey there! I'm 👋 </h2>
 
     <p style={{ textAlign: 'center' }}>
-      👋 Hey there! I'm <h1 style={{ display: 'inline' }}>Riyaz Ahmed</h1>
+      <h1 style={{ display: 'inline' }}>Riyaz Ahmed</h1>
       a passionate Web Developer based in the picturesque region of Kashmir, India. 🏔️
       🌟 As a full-stack developer, I navigate through both the front-end and back-end realms,
       ensuring seamless functionality and delightful user experiences.
