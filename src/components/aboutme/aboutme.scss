@@ -198,7 +198,7 @@
        background-color: #ffc10c;
        color: #1c1c1c;
        border: none;
-       animation: scaleButton 2s infinite;
+       animation: scaleButton 3s ease-in-out infinite;
        box-shadow: 0 1.5rem 4rem #1c1c1c;
        &:hover {
         transition: all 2s ease;
