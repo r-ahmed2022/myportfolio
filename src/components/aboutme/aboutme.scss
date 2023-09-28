@@ -198,6 +198,7 @@
        background-color: #ffc10c;
        color: #1c1c1c;
        border: none;
+       animation: scaleButton 2s infinite;
        box-shadow: 0 1.5rem 4rem #1c1c1c;
        &:hover {
         transition: all 2s ease;
@@ -208,6 +209,16 @@
        @media(max-width: 500px) {
         font-size: 1rem;
      }
+  }
+
+  @keyframes scaleButton {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+
+    }
   }
 
   }
