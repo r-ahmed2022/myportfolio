@@ -6,7 +6,8 @@
   background-color: transparent;
   display: flex;
   justify-content: center;
-  
+  overflow-y: auto;
+  scroll-behavior: smooth;  
   .left {
     flex: 0.4;
     height: 100%;
