@@ -37,7 +37,7 @@ const Aboutme = ({ setMenuState }) => {
         <h1>
           <span>
             Web Developer
-            <a href="#" onMouseEnter={handleOpenModal} className="moreinfo">More..</a>
+            <a href="#" onMouseEnter={handleOpenModal} className="moreinfo">See more..</a>
 
           </span>
           based in Kashmir, India!
