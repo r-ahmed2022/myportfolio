@@ -7,14 +7,18 @@ import './modal.scss';
 
 const Modal = ({ handleCloseModal, hovered }) => (
   <div className={`modal-content ${hovered ? 'active' : 'modal-content'}`} onMouseLeave={handleCloseModal}>
-    <h1>Greetings!</h1>
+    <h1>About Me</h1>
 
-    <p>
-      Welcome to my portfolio—a showcase of creativity, precision,
-      and innovation.
-      <h5>As a web developer, my keyboard has more commits than my GitHub repository.  🚀 </h5>
+    <p style={{ textAlign: 'center' }}>
+      👋 Hey there! I'm <h1 style={{ display: 'inline' }}>Riyaz Ahmed</h1>
+      a passionate Web Developer based in the picturesque region of Kashmir, India. 🏔️
+      🌟 As a full-stack developer, I navigate through both the front-end and back-end realms,
+      ensuring seamless functionality and delightful user experiences.
+      From crafting elegant user interfaces to optimizing database queries, I handle it all!
       <br /><br /><br />
       <h6>
+        <h5>As a web developer, my keyboard has more commits than my GitHub repository.  🚀 </h5>
+
         Let's code the future together💻!
       </h6>
 
