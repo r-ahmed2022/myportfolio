@@ -31,6 +31,14 @@ const recommendations = [
     place: 'Ghana',
     comment: 'Riyaz has a rare ability to understand and explain complex technical concepts in a clear and actionable way',
   },
+  {
+    id: 5,
+    name: 'Mudasir Sherwani',
+    image: 'images/mudasir.jpeg',
+    profession: 'Full-stack Developer',
+    place: 'Pakistan',
+    comment: 'Riyaz Ahmad is a highly valuable individual, ensuring smooth progress, meeting deadlines, and upholding top-tier software development standards in every project.',
+  },
 ];
 
 export default recommendations;

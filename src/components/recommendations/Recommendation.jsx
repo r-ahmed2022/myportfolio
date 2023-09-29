@@ -4,11 +4,17 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable react/prop-types */
+import React, { useState, useEffect } from 'react';
 import './Recommendation.scss';
 import Experience from './Experience';
 import recommendations from './recommendationsData';
 
 export const Recommendation = ({ setMenuState }) => {
+  const [shuffledRecommendations, setShuffledRecommendations] = useState([]);
+  useEffect(() => {
+    const shuffledArray = recommendations.sort(() => Math.random() - 0.5);
+    setShuffledRecommendations(shuffledArray.slice(0, 4));
+  }, []);
   const closeDialog = (e) => {
     if (e.target === e.currentTarget) {
       setMenuState(false);
@@ -34,7 +40,7 @@ export const Recommendation = ({ setMenuState }) => {
       <div className="right" onClick={(e) => closeDialog(e)}>
         <ul className="experiences">
           {
-              recommendations.map((recommendation) => <Experience recommendation={recommendation} key={recommendation.id} id={recommendation.id} />)
+            shuffledRecommendations.map((recommendation) => <Experience recommendation={recommendation} key={recommendation.id} id={recommendation.id} />)
              }
         </ul>
 
