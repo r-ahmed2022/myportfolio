@@ -17,11 +17,11 @@ const recommendations = [
   },
   {
     id: 3,
-    name: 'Mudasir Sherwani',
-    image: 'images/mudasir.jpeg',
+    name: 'Hamayoun Ali Babur',
+    image: 'images/hamayoun.jpeg',
     profession: 'Full-stack Developer',
-    place: 'Pakistan',
-    comment: 'Riyaz possesses a unique blend of technical expertise and creative problem-solving skills, making him a valuable asset to any development team.',
+    place: 'Afghanistan',
+    comment: 'Riyaz Ahmad is a highly valuable individual, ensuring smooth progress, meeting deadlines, and upholding top-tier software development standards in every project.',
   },
   {
     id: 4,
