@@ -19,7 +19,6 @@ const App = () => {
     dispatch(gitHubInfo());
     dispatch(starCountInfo());
     return () => {
-      console.log('Component unmounted');
     };
   }, [dispatch]);
 

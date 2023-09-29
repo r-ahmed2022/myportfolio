@@ -95,6 +95,19 @@ export const Portfolio = ({ setMenuState }) => {
                      }
                     </ul>
                     <span><a href={item.url} target="_blank" rel="noreferrer">Live demo</a></span>
+                    <span
+                      style={{
+                        marginTop: '.5rem', background: '#ffc01c', color: '#fff', border: '2px solid white',
+                      }}
+                      className="code"
+                    >
+                      <a href={item.githublink} target="_blank" rel="noreferrer">
+                        Codebase
+                        {' '}
+                        <i className="fa-brands fa-github fa-2xs" />
+                      </a>
+
+                    </span>
 
                   </div>
                 </div>
