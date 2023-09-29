@@ -39,6 +39,22 @@ const recommendations = [
     place: 'Pakistan',
     comment: 'Riyaz Ahmad is a highly valuable individual, ensuring smooth progress, meeting deadlines, and upholding top-tier software development standards in every project.',
   },
+  {
+    id: 6,
+    name: 'Kwesi Obuobi',
+    image: 'images/kwesi.jpeg',
+    profession: 'Full-stack Developer',
+    place: 'Ghana',
+    comment: 'I highly recommend Riyaz as a web developer. His technical prowess, design acumen, and excellent collaboration skills make him a standout choice.',
+  },
+  {
+    id: 7,
+    name: 'Rabecca Nabwire',
+    image: 'images/Rabecca.jpeg',
+    profession: 'Full-stack Developer',
+    place: 'Kenya',
+    comment: 'Riyaz is one of the most dedicated and enthusiastic people that I have had a chance to meet and interact with. He is very passionate about his work and has the best approach to working together in teams.',
+  },
 ];
 
 export default recommendations;
