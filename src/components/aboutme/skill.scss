@@ -68,6 +68,7 @@
         
       }
     }
+   
   }
 
   .arrow-left {
@@ -117,7 +118,6 @@
         top: 50%;
       }
     }
-  
 
     .card {
       align-self: center;
@@ -146,5 +146,10 @@
        
   }
 
+  @media(max-width: 360px) and (max-height: 600px) {
+     .card > {
+      display: none;
+     }
+   }
 
 }

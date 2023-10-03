@@ -16,12 +16,13 @@ const Navbar = ({ menuState, setMenuState }) => (
       </div>
       <div className="right">
         <span style={{ 'font-family': 'Roboto' }}>
-          <i className="fa-solid fa-mobile-retro mail-icon" />
+          <i className="fa-solid fa-mobile-retro mail-icon" alt="Mobile#" />
           +91-9796171751
         </span>
         <span style={{ 'font-family': 'Roboto' }}>
           <i
             className="fa-solid fa-envelope mail-icon"
+            alt="Mail#"
             onClick={() => window.location = 'mailto:meesamriyaz@gmail.com'}
             style={{ cursor: 'pointer' }}
           />
