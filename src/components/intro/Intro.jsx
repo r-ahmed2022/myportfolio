@@ -65,6 +65,9 @@ export const Intro = ({ setMenuState }) => {
       </div>
       <div className="right-section">
         <div className="pic-section">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#F1C21B" d="M43.2,-74.4C53.1,-69.1,56.3,-51.7,59,-37.3C61.6,-32.9,63.7,-11.5,66.4,1.6C69.2,14.6,72.5,29.2,69.7,43.3C66.9,57.4,57.8,70.9,45.2,77.5C32.5,84.1,16.3,83.7,1.6,81C-13.1,78.3,-26.3,73.3,-39.8,67.2C-53.3,61.1,-67.1,53.9,-77,42.5C-86.9,31.2,-92.9,15.6,-91.6,0.7C-90.3,-14.1,-81.8,-28.2,-72.9,-41.3C-64,-54.3,-54.6,-66.3,-42.3,-70.3C-30.1,-74.2,-15.1,-70.2,0.8,-71.6C16.6,-73,33.3,-79.7,43.2,-74.4Z" transform="translate(100 100)" />
+          </svg>
           <img src="/images/mypic3.png" className="mypic" alt="mypicture" />
           <img
             src={`${process.env.PUBLIC_URL}/images/mypic3.png`}
